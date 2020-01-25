@@ -8,7 +8,10 @@ RSpec.describe Api::V1::PerformanceDataController, type: :request do
       post '/api/v1/performance_data',
           params: {
             performance_data: {
-              data: { message: 'Average' }
+              data: { 
+                message: 'Average',
+                distance: '3000'
+              }
             }
           },
           headers: headers
@@ -20,7 +23,7 @@ RSpec.describe Api::V1::PerformanceDataController, type: :request do
 
     it 'successfully creates a data entry' do
       entry = PerformanceData.last
-      expect(entry.data).to eq 'message' => 'Average'
+      expect(entry.data).to eq 'message' => 'Average', 'distance' => '3000'
     end
   end
 
