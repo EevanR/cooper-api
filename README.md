@@ -1,24 +1,46 @@
-# README
+# Cooper Client Application API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The cooper client is a web applitcation that users can use to log their age along with the distance of any 12 minute run, to recieve a grading of their aerobic abilty, based on preset standards from the military Cooper Test.
 
-Things you may want to cover:
+## Deployed Site
+https://cooper-client-eevan.netlify.com
 
-* Ruby version
+## Dependencies
+- Rails 6.0.2
+- Ruby 2.5.1
+- devise_token_auth
+- rack-cors
 
-* System dependencies
+## Setup
+#### Clone repository
+```
+$ git clone https://github.com/EevanR/cooper-api.git
+$ cd cooper-api
+```
 
-* Configuration
+#### Install dependencies
+Install dependencies
+```
+$ bundle
+```
+Install Rspec if you wish to run the automated tests
+```
+$ rails generate rspec:install
+```
 
-* Database creation
+## Run testing frameworks
+In console:
+Initiate and Run Cypress 
+```
+$ rspec
+```
 
-* Database initialization
+### Actions available to the user
 
-* How to run the test suite
+Head to the deployed address listed above and fill in the required fields!
 
-* Services (job queues, cache servers, search engines, etc.)
+## Updates/Improvement plans
+Further styling and functionality.
 
-* Deployment instructions
-
-* ...
+## License
+Created under the <a href="https://en.wikipedia.org/wiki/MIT_License">MIT License</a>.
